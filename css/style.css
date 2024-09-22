@@ -6,13 +6,6 @@ body {
     background-color: #686C71; /* Couleur du fond générée */
     font-family: Arial, sans-serif;
 }
-main {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #686C71; /* Couleur du fond générée */
-    font-family: Arial, sans-serif;
-}
 
 header {
     background-color: #282E35; /* Couleur de l'en-tête */
@@ -64,14 +57,16 @@ header {
     color: white;
 }
 
-.content {
-    flex-grow: 1;
+/* Adapter le style du main pour correspondre aux couleurs sombres */
+main {
+    background-color: #282E35; /* Utilise la même couleur que l'en-tête ou barre latérale */
+    color: white;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Un fond légèrement transparent */
     border-radius: 8px;
     margin: 20px;
+    flex-grow: 1;
 }
 
 .content h2 {
-    color: #333;
+    color: white; /* Utiliser une couleur claire pour les titres */
 }

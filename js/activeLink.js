@@ -1,12 +1,13 @@
-// Obtenir l'URL actuelle
-var currentLocation = window.location.href;
+// Obtenir le chemin de l'URL actuelle sans le domaine
+var currentPath = window.location.pathname;
 
 // Sélectionner tous les liens dans la sidebar
 var menuItems = document.querySelectorAll('.sidebar ul li a');
 
-// Boucler sur les liens pour ajouter la classe 'active' à celui qui correspond à l'URL
+// Boucler sur les liens pour ajouter la classe 'active' à celui qui correspond au chemin actuel
 menuItems.forEach(function(item) {
-    if (item.href === currentLocation) {
+    // Comparer uniquement les chemins des URLs
+    if (item.getAttribute('href') === currentPath) {
         item.parentElement.classList.add('active');
     }
 });
