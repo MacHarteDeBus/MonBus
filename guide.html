@@ -24,8 +24,56 @@
 
         <!-- Contenu principal -->
         <main class="content">
-            <h2>Bienvenue dans la documentation du jeu</h2>
-            <p>Cliquez sur une des catégories à gauche pour commencer à explorer la documentation et les guides !</p>
+            
+            <p>
+        Tout d’abord, un joueur qui souhaite jouer pour la première fois doit s’enregistrer, sans quoi il ne pourra sauvegarder sa progression et se verra refuser l’accès à plusieurs commandes du jeu.
+    </p>
+    <p>
+        Pour ce faire, il doit utiliser la commande <span class="command">!register</span>. Le joueur peut maintenant utiliser les autres commandes. Tout d’abord, la commande <span class="command">!daily</span>, qui s’utilise chaque jour à partir de 00h, donne 3000 points. Il est alors possible d’utiliser la commande <span class="command">!lootbox</span>. Sans précision, elle prendra 2000 points au joueur et lui donnera un objet aléatoire correspondant à la progression du joueur. Il est aussi possible de lui préciser un nombre afin que plusieurs lootbox soient ouvertes en même temps, par exemple <span class="command">!lootbox 10</span> donnera 10 objets contre 20.000 points.
+    </p>
+
+    <h1>Gestion de l'inventaire et commerce</h1>
+    <p>
+        Les objets obtenus via les lootbox et les donjons sont équipables via l’inventaire avec l’icône 🛡️ dans la commande <span class="command">!inventaire</span>. Il est aussi possible de les vendre à un PNJ pour 250 points avec l’icône 💰, ou de les mettre en HDV avec les autres joueurs pour faire du commerce avec l’icône 🏷️.
+    </p>
+    <p>
+        Il est possible de visiter l’HDV en utilisant la commande <span class="command">!hdv</span> suivie du type d’objet souhaité. Il existe les objets suivants : arme / armure / bottes / ceinture / collier / bague. Il n’est possible de mettre qu’un objet en vente par type d’objet.
+    </p>
+    <p>
+        Pour connaître son nombre de points, utilisez la commande <span class="command">!points</span>.
+    </p>
+    <p>
+        À l'inverse, pour acheter des objets à d'autres joueurs, il suffit d’utiliser la commande <span class="command">!acheter</span> suivie du numéro devant l’objet que vous souhaitez acheter dans l’HDV.
+    </p>
+
+    <h1>Clés de donjon et progression</h1>
+    <p>
+        Toutes les 45 minutes, le joueur obtiendra une clef de donjon qu’il pourra utiliser avec la commande <span class="command">!donjon</span>. Il est possible de connaître son nombre de clefs avec la commande <span class="command">!clefs</span>. Dans ce dernier, il y trouvera des points, et plus ou moins facilement des objets en fonction de sa progression. Le joueur obtiendra aussi de l'expérience en fonction de ses dégâts et de sa sagesse pour passer des niveaux, les niveaux en eux-mêmes ne servent pas, en revanche les prestiges (que l’on peut obtenir une fois niveaux 100 via la commande <span class="command">!prestige</span>) donnent des points de stats distribuables parmi 4 statistiques (via la commande <span class="command">!points_stats</span>).
+    </p>
+    <p>
+        Le joueur peut avoir jusqu’à 5 clefs sur lui sans acheter de slot supplémentaire. La commande <span class="command">!slot_clef</span> permet d’acheter un emplacement jusqu’à 10 maximum, mais elle est coûteuse, puisque la première coûte 25.000 points, et les suivantes sont plus chères de 25.000 à chaque fois. Il est aussi possible d’acheter des clefs avec la commande <span class="command">!buy_clef</span>. Attention, cette commande a besoin d’un chiffre pour fonctionner, il faut donc par exemple écrire <span class="command">!buy_clef 2</span>. Il faut aussi savoir que chaque clef coûte 10.000 points.
+    </p>
+
+    <h1>Amélioration des objets et épreuves</h1>
+    <p>
+        Une fois que les équipements commencent à être de qualité rare ou épique, il devient plus simple de passer des épreuves. Il y a trois épreuves au total, dans l’ordre de difficulté : classe / donjon / céleste (si vous ne passez pas l’épreuve, équipez de nouveaux objets puis réessayez). Pour tenter de passer l’épreuve, il faudra utiliser la commande <span class="command">!epreuve classe</span>, par exemple, afin de tenter l'épreuve de classe.
+    </p>
+    <p>
+        Ces épreuves permettent de débloquer d’importantes choses dans le jeu, comme des objets avec plusieurs lignes de statistiques, ou d’obtenir des classes sur les équipements et le joueur. Un objet équipé qui appartient à la même classe que le joueur est amélioré de 50 %. Ainsi, si le joueur devait obtenir 100 points de vie, il en aura 150 ! Il est possible de changer de classe contre 5000 points via la commande <span class="command">!changer_classe</span>.
+    </p>
+
+    <h1>Amélioration et gestion des objets légendaires</h1>
+    <p>
+        Les objets sont améliorables entre eux et peuvent même changer de rareté si les conditions sont remplies. Pour ce faire, il faut utiliser la commande <span class="command">!upgrade</span>. L’amélioration des stats consomme un des deux objets, le changement de rareté consomme entre 1 et 2 objets selon la rareté suivante.
+    </p>
+    <p>
+        Lorsque vous avez un objet légendaire ou mieux, et que vous ne vous en servez pas, il peut être brisé avec la commande <span class="command">!concasser</span>. Attention, tout objet concassé est irrécupérable ! Une fois la commande faite, choisissez l’objet que vous souhaitez concasser avec son numéro dans l’inventaire. Utilisez l'icône ⚒️ puis entrez le numéro de l’objet. Lorsqu’un objet est concassé, vous obtenez des points boss en fonction de la qualité de l’objet détruit, ainsi qu’un jeton de qualité et de classe associé à l'objet. Ces trois choses vous permettent d’FM vos objets équipés via la commande <span class="command">!fm</span>.
+    </p>
+
+    <h1>Achat de la relique</h1>
+    <p>
+        Lorsque vous commencerez à avoir un stuff assez haut (légendaire/divin/céleste), il sera temps de considérer l’achat de la relique du jeu, qui coûte 100.000 points. Si vous avez les points, faites la commande <span class="command">!achat_relique</span>.
+    </p>
         </main>
     </div>
     <script src="js/activeLink.js"></script>

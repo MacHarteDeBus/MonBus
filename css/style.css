@@ -70,3 +70,9 @@ main {
 .content h2 {
     color: white; /* Utiliser une couleur claire pour les titres */
 }
+
+}
+.command {
+    text-decoration: underline;
+    font-weight: bold;
+}
