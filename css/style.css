@@ -6,6 +6,13 @@ body {
     background-color: #686C71; /* Couleur du fond générée */
     font-family: Arial, sans-serif;
 }
+main {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #686C71; /* Couleur du fond générée */
+    font-family: Arial, sans-serif;
+}
 
 header {
     background-color: #282E35; /* Couleur de l'en-tête */
