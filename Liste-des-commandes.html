@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide du Joueur</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        p {
+            margin-bottom: 20px;
+        }
+        .command {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #8B0000;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,37 +36,37 @@
             <h2>Liste des commandes du jeu</h2>
             <p>Voici donc la liste des commandes : <br></p>
             <ul>
-                <li>!register : pour s'enregistrer dans la base de donnée.<br></li>
-                <li>!daily : Commande journalière qui donne 3000 points.<br></li>
-                <li>!lootbox : génère un objet aléatoire contre 2000 points.<br></li>
-                <li>!stuff : Permet de voir les objets que le joueur a équipés.<br></li>
-                <li>!inventaire : permet d'accéder à son inventaire afin d'équiper, de vendre à un pnj, ou de mettre en vente des objets.<br></li>
-                <li>!hdv : Suivi du nom d'un objet comme "arme", permet de voir les armes mise en vente par les autres joueurs.<br></li>
-                <li>!acheter : Suivi du numéro de l'objet vu en hdv, permet de l'acheter contre les points indiqué en hdv.<br></li>
-                <li>!mes_ventes : Permet de voir les objets mis en vente par le joueur dans l'hdv.<br></li>
-                <li>!retirer : Suivi du numéro visible via !mes_ventes, permet de retirer l'objet de la vente.<br></li>
-                <li>!points : permet de consulter son solde de points, points boss, points de stats et jeton classe/qualité.<br></li>
-                <li>!donjon : permet d'explorer un donjon pour y gagner des points et possiblement des objets, ainsi que de l'experience.<br></li>
-                <li>!prestige : permet de passer au prestige suivant lorsque le joueur est niveau 100.<br></li>
-                <li>!points_stats : permet de distribuer ses points de stats obtenu via les niveaux prestiges.<br></li>
-                <li>!reset_stats : Commande journalière qui donne 3000 points.<br></li>
-                <li>!slot_clef : permet d'acheter un slot de clef si le joueur a assez de points.<br></li>
-                <li>!buy_clef : permet d'acheter une clef si le joueur a assez de points. Il est possible de préciser le nombre de clefs voulu.<br></li>
-                <li>!epreuve : Suivi de "classe", "donjon", "celeste" ou "monolithe", permet d'affronter un adversaire pour débloquer du contenu en jeu.<br></li>
-                <li>!upgrade : permet d'améliorer les objets sans statistique de coup critique.<br></li>
-                <li>!concasser : détruit l'objet de l'inventaire désigné contre des points boss, un jeton de la rareté de l'objet détruit,<br>ainsi qu'un jeton de la classe que l'objet a. l'objet doit être légendaire ou mieux.<br></li>
-                <li>!fm : Permet l'amélioration des objets équipés par le joueur contre des points boss.<br></li>
-                <li>!daily : Commande journalière qui donne 3000 points.<br></li>
-                <li>!achat_relique : permet d'acheter la relique si le joueur a assez de points.<br></li>
-                <li>!relique_info : Permet de connaitre les statistiques donné par sa relique.<br></li>
-                <li>!attack_wb : Permet d'attaquer le world boss 2 fois par jour, sauf si le boss revient à la vie le même jour.<br></li>
-                <li>!autosell : Suivi d'une rareté d'objet : vend tout ce qui est aussi rare ou moins sauf si équipé.<br></li>
-                <li>!boss_stats : Permet d'avoir des informations concernant le boss en cours.<br></li>
-                <li>!changer_classe : Permet d'avoir des informations sur le changement de classe.<br></li>
-                <li>!classement : Permet d'obtenir le classement PVP.<br></li>
-                <li>!clefs : Permet de connaitre le nombre de clef en la posséssion du joueur.<br></li>
-                <li>!pvp : Commande journalière qui permet d'affronter 5 joueurs proches de son elo.<br></li>
+                <li><span class="command">!register</span> : pour s'enregistrer dans la base de donnée.<br></li>
+                <li><span class="command">!daily</span> : Commande journalière qui donne 3000 points.<br></li>
+                <li><span class="command">!lootbox</span> : génère un objet aléatoire contre 2000 points.<br></li>
+                <li><span class="command">!stuff</span> : Permet de voir les objets que le joueur a équipés.<br></li>
+                <li><span class="command">!inventaire</span> : permet d'accéder à son inventaire afin d'équiper, de vendre à un pnj, ou de mettre en vente des objets.<br></li>
+                <li><span class="command">!hdv</span> : Suivi du nom d'un objet comme "arme", permet de voir les armes mises en vente par les autres joueurs.<br></li>
+                <li><span class="command">!acheter</span> : Suivi du numéro de l'objet vu en hdv, permet de l'acheter contre les points indiqués en hdv.<br></li>
+                <li><span class="command">!mes_ventes</span> : Permet de voir les objets mis en vente par le joueur dans l'hdv.<br></li>
+                <li><span class="command">!retirer</span> : Suivi du numéro visible via <span class="command">!mes_ventes</span>, permet de retirer l'objet de la vente.<br></li>
+                <li><span class="command">!points</span> : permet de consulter son solde de points, points boss, points de stats et jetons classe/qualité.<br></li>
+                <li><span class="command">!donjon</span> : permet d'explorer un donjon pour y gagner des points et possiblement des objets, ainsi que de l'expérience.<br></li>
+                <li><span class="command">!prestige</span> : permet de passer au prestige suivant lorsque le joueur est niveau 100.<br></li>
+                <li><span class="command">!points_stats</span> : permet de distribuer ses points de stats obtenus via les niveaux prestiges.<br></li>
+                <li><span class="command">!reset_stats</span> : Commande journalière qui donne 3000 points.<br></li>
+                <li><span class="command">!slot_clef</span> : permet d'acheter un slot de clef si le joueur a assez de points.<br></li>
+                <li><span class="command">!buy_clef</span> : permet d'acheter une clef si le joueur a assez de points. Il est possible de préciser le nombre de clefs voulu.<br></li>
+                <li><span class="command">!epreuve</span> : Suivi de "classe", "donjon", "céleste" ou "monolithe", permet d'affronter un adversaire pour débloquer du contenu en jeu.<br></li>
+                <li><span class="command">!upgrade</span> : permet d'améliorer les objets sans statistique de coup critique.<br></li>
+                <li><span class="command">!concasser</span> : détruit l'objet de l'inventaire désigné contre des points boss, un jeton de la rareté de l'objet détruit, ainsi qu'un jeton de la classe que l'objet a. L'objet doit être légendaire ou mieux.<br></li>
+                <li><span class="command">!fm</span> : Permet l'amélioration des objets équipés par le joueur contre des points boss.<br></li>
+                <li><span class="command">!achat_relique</span> : permet d'acheter la relique si le joueur a assez de points.<br></li>
+                <li><span class="command">!relique_info</span> : Permet de connaître les statistiques données par sa relique.<br></li>
+                <li><span class="command">!attack_wb</span> : Permet d'attaquer le world boss 2 fois par jour, sauf si le boss revient à la vie le même jour.<br></li>
+                <li><span class="command">!autosell</span> : Suivi d'une rareté d'objet, vend tout ce qui est aussi rare ou moins sauf si équipé.<br></li>
+                <li><span class="command">!boss_stats</span> : Permet d'avoir des informations concernant le boss en cours.<br></li>
+                <li><span class="command">!changer_classe</span> : Permet d'avoir des informations sur le changement de classe.<br></li>
+                <li><span class="command">!classement</span> : Permet d'obtenir le classement PVP.<br></li>
+                <li><span class="command">!clefs</span> : Permet de connaître le nombre de clefs en possession du joueur.<br></li>
+                <li><span class="command">!pvp</span> : Commande journalière qui permet d'affronter 5 joueurs proches de son elo.<br></li>
             </ul>
+
 
         </main>
     </div>
